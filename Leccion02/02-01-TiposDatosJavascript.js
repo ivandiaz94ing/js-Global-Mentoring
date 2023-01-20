@@ -2,7 +2,7 @@
 var nombre = "Ivan";
 console.log(nombre);
 
-let apellido = "Diaz";
+var apellido = "Diaz";
 console.log(apellido)
 
 //TIPO DE DATOS NUMERICO
@@ -57,3 +57,29 @@ console.log(typeof x)
 var y = null;
 console.log(y);
 console.log(typeof y);
+
+
+//ARREGLOS
+var autos = [ 'Mazda', 'Audi', 'Chevrolet' ];
+console.log(autos);
+console.log(typeof autos);
+
+var z = '';
+console.log(z);
+console.log(typeof z);
+
+//CONCATENAR CADENAS
+
+var nombre = 'Ivan ';
+var apellido = 'Diaz ';
+let nombrecompleto = nombre + apellido;
+console.log(nombrecompleto);
+
+var  x = nombre + 2 + 3;
+console.log(x);
+
+var x = nombre + (2+3);
+console.log(x);
+
+var x = 2 + 3 + nombre;
+console.log(x);
