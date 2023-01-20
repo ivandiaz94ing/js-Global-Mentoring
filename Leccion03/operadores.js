@@ -110,3 +110,10 @@ console.log(w);
 w = j <= ñ;
 console.log(w);
 
+//OPERADOR TERNARIO
+let resultado = ('IVAN'=='ivan')?"Verdadero":"Falso";
+console.log(resultado);
+
+let numero = 92;
+resultado = ( numero % 2 == 0 ) ? " Es par " : " Es impar ";
+console.log(resultado);
