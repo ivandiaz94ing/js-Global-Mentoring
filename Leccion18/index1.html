@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title">Ejemplo DOM con Javascript</title>
+  </head>
+
+  <body>
+    <h1 id="cabecero">Aprendiendo JavaScript de cero a experto</h1>
+    <h2>Ejemplo DOM con JavaScript</h2>
+    <p id="parrafo">Saludos a los novatos y expertos</p>
+    <p>En esta seccion estoy aprendiendo a manejar el DOM </p>
+    
+    <script>
+      let parrafos = document.getElementsByTagName('p');
+      console.log(`N° Parrafos: ${parrafos.length}`);
+
+      for (let i = 0; i < parrafos.length; i++) {
+            console.log(`${i} - ${parrafos[i].innerHTML}`);
+        
+      }
+
+      
+    </script>
+  </body>
+</html>

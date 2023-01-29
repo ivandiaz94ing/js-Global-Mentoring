@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title">Ejemplo DOM con Javascript</title>
+    
+    <style>
+        .azul {
+            color: blue;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <h1 id="cabecero">Aprendiendo JavaScript de cero a experto</h1>
+    <h2 class=" azul ">Ejemplo DOM con JavaScript</h2>
+    <p class="azul">Saludos a los novatos y expertos</p>
+    <p class="azul">En esta seccion estoy aprendiendo a manejar el DOM </p>
+    
+    <script>
+      let elementos = document.getElementsByClassName('azul');
+      console.log(`N° Elementos: ${elementos.length}`);
+     
+      //sintaxis clasica
+      for (let i = 0; i < elementos.length; i++) {
+            console.log(`${i} - ${elementos[i].innerHTML}`);
+        
+      }
+      console.log(`\n`)
+        //for of
+        let toral = 0;
+        for (let elemento of elementos) {
+            console.log(`${toral} ${elemento.innerHTML}`)
+            toral ++;
+            
+        }
+      
+    </script>
+  </body>
+</html>

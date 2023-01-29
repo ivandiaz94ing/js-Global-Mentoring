@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title">Ejemplo DOM con Javascript</title>
+  </head>
+
+  <body>
+    <h1 id="cabecero">Aprendiendo JavaScript de cero a experto</h1>
+    <h2>Ejemplo DOM con JavaScript</h2>
+    <p id="parrafo">Saludos a los novatos y expertos</p>
+
+    <script>
+      let cabecero = document.getElementById("cabecero");
+      console.log(`Titulo: ${cabecero.innerHTML}\n`);
+
+      let parrafo = document.getElementById("parrafo");
+      console.log(`Parrafo: ${parrafo.innerHTML}\n`); 
+      cabecero.innerHTML = 'Cambio de valor del Cabezero';
+      
+        parrafo.innerHTML = 'Nuevo valor del parrafo';
+      
+        let titulo = document.getElementById('title');
+        console.log(titulo.innerHTML);
+        titulo.innerHTML = 'Aprendiendo JavaScript con Global Mentoring';
+          parrafo.innerHTML = "Saludos a todos";
+    </script>
+  </body>
+</html>
