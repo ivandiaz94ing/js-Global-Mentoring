@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM JavaScript</title>
+</head>
+<body>
+    <h2 id="titulo1">Manejo de evento onchange</h2>
+    Nombre: <input type="text" onchange="convertir(this)">
+
+    <h2 id="titulo2" onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">Manejo de evento onmouseover</h2>
+    
+    <script>
+
+        function azul (tituloh2){
+            console.log('onmouseup cambio a azul')
+            tituloh2.style.color = 'blue';
+        }
+        
+        function rojo(tituloh2){
+            console.log('onmousedown cambio a rojo')
+            tituloh2.style.color = 'red';
+        }
+        
+        function verde(tituloh2){
+            console.log('onclick cambio a verde')
+            tituloh2.style.color = 'green';
+        }
+    </script>
+</body>
+</html>

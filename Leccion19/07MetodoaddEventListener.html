@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evendo de JavaScript</title>
+</head>
+<body>
+    <h2>Metodos Onfocus </h2>
+    <h2>Metodos Onblur </h2>
+    <p>Los metodos onfocus y onblur permite enfocar y desenfocar elementos</p>
+    Nombre: <input id="nombre" type="text" ><br><br>
+    Apellido: <input  id="apellido" type="text" >
+
+    <script>
+        document.getElementById('nombre').addEventListener('focus', cambiar);
+        document.getElementById('nombre').addEventListener('blur', regresar);
+
+        document.getElementById('apellido').addEventListener('focus', cambiar);
+        document.getElementById('apellido').addEventListener('blur', regresar);
+
+        function cambiar(evento){
+            let componente = evento.target;
+            componente.style.background = 'orange';
+        }
+
+        function regresar(evento){
+            let componente = evento.target;
+            componente.style.background = 'white';
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM JavaScript</title>
+</head>
+<body>
+    <h2 id="titulo1">Manejo de evento onchange</h2>
+    Nombre: <input type="text" onchange="convertir(this)">
+
+    <h2 id="titulo2" onmouseover="rojo()" onmouseout="azul()">Manejo de evento onmouseover</h2>
+    
+    <h2 id="titulo3">Manejo de evento onmouseout</h2>
+
+
+
+    <script>
+        function convertir(nombreInput){
+            nombreInput.value = nombreInput.value.toUpperCase();
+        }
+
+        function azul (){
+            document.getElementById('titulo2').style.color = 'blue';
+        }
+
+        function rojo(){
+            document.getElementById('titulo2').style.color = 'red';
+        }
+    </script>
+</body>
+</html>

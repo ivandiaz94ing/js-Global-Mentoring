@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >Manejo de eventos con el DOM en JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo" >Manejo de eventos con DOM de JavaScript</h1>
+
+    <div id="mostrar"></div>
+    <script>
+        let h1 = document.getElementById('titulo');
+        let div = document.getElementById('mostrar');
+
+        // function cambiarTexto(objetoh1){
+        //     console.log(objetoh1.innerHTML);
+        //     objetoh1.innerHTML = 'Nuevo Titulo';
+        //     console.log(objetoh1.innerHTML);
+        // }
+        h1.onclick = mostrartexto;
+        function mostrartexto (){
+            div.innerHTML = 'Nuevo Contenido';
+        }
+
+        function cambiarTexto(){
+            h1.innerHTML = 'New Tittle';
+        }
+    </script>
+
+    
+</body>
+</html>

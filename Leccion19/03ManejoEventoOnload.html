@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo de Evantos</title>
+</head>
+<body onload="entrar()">
+    <h1>Manejo del Evento onload</h1>
+    <div id="div"></div>
+
+    <script>
+        function entrar(){
+            let texto = '';
+            alert('Entrando a la pagina web');
+            if (navigator.cookieEnabled) {
+                texto = 'Cokkies Habilitadas';
+                
+            } else {
+                texto = 'Cokkies Inhabilitadas';
+                
+            }
+
+            document.getElementById('div').innerHTML = texto;
+        }
+    </script>
+
+</body>
+</html>

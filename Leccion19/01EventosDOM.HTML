@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Manejo de eventos con el DOM en JavaScript</title>
+</head>
+<body>
+    <h1 onclick=" cambiarTexto(this)" >Manejo de eventos con DOM de JavaScript</h1>
+
+    <script>
+        function cambiarTexto(objetoh1){
+            console.log(objetoh1.innerHTML);
+            objetoh1.innerHTML = 'Nuevo Titulo';
+            console.log(objetoh1.innerHTML);
+        }
+    </script>
+
+    
+</body>
+</html>

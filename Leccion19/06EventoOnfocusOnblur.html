@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evendo de JavaScript</title>
+</head>
+<body>
+    <h2>Metodos Onfocus </h2>
+    <h2>Metodos Onblur </h2>
+    <p>Los metodos onfocus y onblur permite enfocar y desenfocar elementos</p>
+    Nombre: <input type="text" onblur="regresar(this) " onfocus="cambiar(this)"><br><br>
+    Apellido: <input type="text" onblur="regresar(this) " onfocus="cambiar(this)">
+
+    <script>
+        function cambiar (elementoInput) {
+            elementoInput.style.background = 'yellow';
+        }
+
+        function regresar(elementoInput) {
+            elementoInput.style.background = 'white';
+        }
+    </script>
+</body>
+</html>
